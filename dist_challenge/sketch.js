@@ -28,7 +28,7 @@ function mouseClicked() {
     xPos2 = random(50, 350);
     yPos2 = random(50, 350);
 
-    if (dist(xPos1, yPos1, xPos2,yPos2) < 100){
+    if (dist(xPos1, yPos1, xPos2,yPos2) <= 100){
         fill(255, 0, 0);
     } else {
             fill(0, 255, 0);

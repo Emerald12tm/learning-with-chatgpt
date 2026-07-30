@@ -1,10 +1,10 @@
 let xPos = 220;
 let yPos = 0;
+let xSpeed = 1;
+let ySpeed = 4;
 
 function setup() {
-    let xSpeed = 1;
-    let ySpeed = 4;
-    createcanvas(500, 500);
+    createCanvas(500, 500);
     background(255);
 }
 
@@ -23,13 +23,12 @@ function draw() {
     xPos += xSpeed;
     yPos += ySpeed;
 
-    if (xPos < 225 || xPos > 275) {
+    if (xPos < 220 || xPos > 280) {
         xSpeed *= -1;
-    
+    }
 
     if (yPos >= 520) {
         yPos = -20;
         ySpeed = random(2, 10)
     }
-}
 }
